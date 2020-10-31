@@ -1,0 +1,20 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <h1>Observer Pattern</h1>
+  <p>
+    <button (click)="startWatching()">Start Watching</button>
+  </p>
+  <p>
+    <button (click)="stopWatching()">Stop Watching</button>
+  </p>
+  <h3 *ngIf="timestamps && timestamps.length > 0">Time Stamps</h3>
+  <p *ngFor="let timestamp of timestamps">Timestamp: {{timestamp}}</p>
+
+</body>
+
+</html>
